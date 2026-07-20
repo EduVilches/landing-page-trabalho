@@ -3,66 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eduardo Vilches | Soluções Web & TI</title>
+  <title>Cavaquinho no Samba | Do Zero ao Pagode</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
   
   <header class="hero">
     <div class="container">
-      <h1>Eduardo Vilches</h1>
-      <p class="slogan">Desenvolvimento Full-Stack & Soluções em Tecnologia</p>
-      <a href="#contato" class="btn-cta">Saiba Mais</a>
+      <span class="badge">Método Prático</span>
+      <h1>Dominando o Cavaquinho no Samba</h1>
+      <p class="slogan">Aprenda as palhetadas, sequências harmônicas e a cadência certa do samba de raiz e do pagode tradicional. Sem enrolação!</p>
+      <a href="#contato" class="btn-cta">Garantir Minha Vaga</a>
     </div>
   </header>
 
   <main class="container">
     <section id="sobre" class="card">
-      <h2>Sobre Mim</h2>
-      <p>Desenvolvedor focado em criar aplicações web funcionais, eficientes e de alto desempenho.</p>
+      <h2>O que você vai dominar no curso?</h2>
+      <p>Um treinamento direto ao ponto para você fazer bonito na roda de samba. Você vai aprender a pegada da palhetada (samba enredo, partido alto, samba de roda), transição rápida de acordes, baixarias básicas e como acompanhar qualquer música de ouvido.</p>
     </section>
 
     <section id="contato" class="card">
-      <h2>Solicite um Orçamento / Contato</h2>
+      <h2>Pré-Inscrição & Desconto Exclusivo</h2>
+      <p class="subtitle">Preencha os dados abaixo para receber o material demonstrativo e garantir vaga na nova turma:</p>
       
       <form id="form-contato">
         <div class="field-group">
-          <label for="nome">Nome completo:</label>
-          <input type="text" id="nome" placeholder="Digite seu nome" required>
+          <label for="nome">Seu Nome:</label>
+          <input type="text" id="nome" placeholder="Digite seu nome completo" required>
         </div>
 
         <div class="field-group">
-          <label for="email">E-mail:</label>
+          <label for="email">Seu E-mail:</label>
           <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
         </div>
 
         <div class="field-group">
-          <label for="cep">CEP (para localização do atendimento):</label>
+          <label for="cep">CEP da sua cidade:</label>
           <input type="text" id="cep" placeholder="00000000" maxlength="8" required>
         </div>
 
         <div class="inline-fields">
           <div class="field-group">
             <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" placeholder="Preenchido via CEP" readonly>
+            <input type="text" id="cidade" placeholder="Aguardando CEP..." readonly>
           </div>
           <div class="field-group">
-            <label for="estado">Estado:</label>
+            <label for="estado">UF:</label>
             <input type="text" id="estado" placeholder="UF" readonly>
           </div>
         </div>
 
         <div class="field-group">
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" placeholder="Como posso te ajudar?" rows="4" required></textarea>
+          <label for="mensagem">Qual sua maior dificuldade hoje na palhetada do samba?</label>
+          <textarea id="mensagem" placeholder="Ex: Manter o ritmo firme, trocar os acordes sem travar, entender as sequências..." rows="3" required></textarea>
         </div>
 
-        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+        <button type="submit" class="btn-submit">Quero Dominar o Cavaquinho</button>
       </form>
 
       <div id="mensagem-sucesso" class="feedback-msg hidden"></div>
     </section>
   </main>
+
+  <footer>
+    <p>&copy; 2026 Curso Cavaquinho no Samba. Todos os direitos reservados.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
