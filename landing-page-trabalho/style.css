@@ -189,3 +189,7 @@ footer {
   margin-bottom: 20px;
   border: 1px solid #323238;
 }
+.highlight {
+  color: #fba931; /* ou a cor do seu botão/detalhes */
+  font-weight: bold;
+}
