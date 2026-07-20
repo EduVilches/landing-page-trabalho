@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Vilches | Soluções Web & TI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="hero">
+    <div class="container">
+      <h1>Eduardo Vilches</h1>
+      <p class="slogan">Desenvolvimento Full-Stack & Soluções em Tecnologia</p>
+      <a href="#contato" class="btn-cta">Saiba Mais</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="sobre" class="card">
+      <h2>Sobre Mim</h2>
+      <p>Desenvolvedor focado em criar aplicações web funcionais, eficientes e de alto desempenho.</p>
+    </section>
+
+    <section id="contato" class="card">
+      <h2>Solicite um Orçamento / Contato</h2>
+      
+      <form id="form-contato">
+        <div class="field-group">
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="field-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="field-group">
+          <label for="cep">CEP (para localização do atendimento):</label>
+          <input type="text" id="cep" placeholder="00000000" maxlength="8" required>
+        </div>
+
+        <div class="inline-fields">
+          <div class="field-group">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" placeholder="Preenchido via CEP" readonly>
+          </div>
+          <div class="field-group">
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" placeholder="UF" readonly>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" placeholder="Como posso te ajudar?" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+      </form>
+
+      <div id="mensagem-sucesso" class="feedback-msg hidden"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
