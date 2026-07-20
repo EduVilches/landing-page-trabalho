@@ -1,10 +1,10 @@
-// 1. Consumo da API ViaCEP
+//Consumo da API ViaCEP
 const inputCep = document.getElementById('cep');
 const inputCidade = document.getElementById('cidade');
 const inputEstado = document.getElementById('estado');
 
 inputCep.addEventListener('blur', () => {
-  let cep = inputCep.value.replace(/\D/g, ''); // Remove tudo que não é número
+  let cep = inputCep.value.replace(/\D/g, ''); //Remove tudo que não é número
 
   if (cep.length === 8) {
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
@@ -26,19 +26,19 @@ inputCep.addEventListener('blur', () => {
   }
 });
 
-// 2. Ação do Botão e Feedback do Formulário
+//Ação do Botão e Feedback do Formulário
 const form = document.getElementById('form-contato');
 const feedback = document.getElementById('mensagem-sucesso');
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault(); // Impede o recarregamento da página
+  e.preventDefault(); //Impede o recarregamento da página
 
   const nome = document.getElementById('nome').value;
   
-  // Exibe mensagem de agradecimento usando JS
+  //Exibe mensagem de agradecimento
   feedback.textContent = `Obrigado pelo contato, ${nome}! Sua mensagem foi registrada com sucesso.`;
   feedback.classList.remove('hidden');
   
-  // Limpa o formulário
+  //Limpa o formulário
   form.reset();
 });
